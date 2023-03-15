@@ -31,7 +31,6 @@ pipeline {
             }
         }
         stage('build') {
-            
             steps {
                 script{
                     echo 'building the application'
