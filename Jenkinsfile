@@ -49,10 +49,10 @@ pipeline {
                  params.executeTest
              }
           }
-            steps {
+          steps {
                 script{echo 'testing the application'
                 sh 'mvn test'}
-            }
+          }
         }
       stage('deploy') {
         input{
