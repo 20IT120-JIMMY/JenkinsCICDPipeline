@@ -75,7 +75,7 @@ pipeline {
         stage('commit version update'){
             steps{
                 script{
-                    withCredentials([usernamePassword(credentialsId: 'git-credentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
+                    withCredentials([usernamePassword(credentialsId: 'github', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]){
                         sh 'git config --global user.email "20it120@charusat.edu.in"'
                         sh 'git config --global user.name "Jimmy$$0912"'
 
